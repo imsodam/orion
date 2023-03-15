@@ -1,0 +1,507 @@
+/* sub2_1 > 윤리경영 - 윤리경영체계 */
+.content_area .tab.w2 {
+  width: 100%;
+}
+
+.content_area .tab ul {
+  display: flex;
+}
+
+.content_area .tab li {
+  width: 100%;
+}
+
+.content_area .tab li a {
+  position: relative;
+  /* height: 68px;  */
+  line-height: 68px;
+  display: block;
+  font-size: 20px;
+  border: 1px solid #ddd;
+  border-left-width: 0;
+  text-align: center;
+  color: #999;
+  transition: all 0.3s;
+}
+
+.content_area .tab li:first-child a {
+  border-left-width: 1px;
+}
+
+.content_area .tab li:hover a {
+  background: rgba(0, 87, 147, 0.04);
+}
+
+.content_area .tab li.current a {
+  color: #d2001a;
+  font-weight: 600;
+}
+
+.content_area .tab li.current a::before {
+  content: "";
+  position: absolute;
+  left: -1px;
+  top: -1px;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #d2001a;
+}
+
+.cont {
+  margin: 80px 0 0;
+  font-size: 20px;
+  letter-spacing: -0.025rem;
+  line-height: 30px;
+  position: relative;
+}
+
+.cont h3 {
+  font-size: 35px;
+  letter-spacing: -0.065rem;
+  margin: 80px 0 40px 15px;
+}
+
+.cont h3:after {
+  content: "";
+  width: 5px;
+  height: 32px;
+  position: absolute;
+  left: 2px;
+  background: #d2001a;
+}
+
+.cont h4 {
+  font-size: 25px;
+  font-weight: 600;
+  letter-spacing: -0.045rem;
+  margin: 80px 0 30px;
+}
+
+.cont img {
+  position: absolute;
+  top: 80%;
+  transform: translateY(-50%);
+  left: 50%;
+}
+
+.cont .ethics_active {
+  margin: 100px 0 150px;
+  display: flex;
+}
+
+.cont .ethics_active li {
+  position: relative;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  margin-left: 60px;
+  text-align: center;
+  padding: 8px;
+  background-color: #fff;
+  /* background: rgb(210, 0, 26);
+  background: linear-gradient(
+    0deg,
+    rgba(210, 0, 26, 1) 50%,
+    rgba(244, 204, 204, 1) 50%
+  ); */
+  /* opacity: 0; */
+}
+
+.cont .ethics_active li:nth-child(1) {
+  background-color: #ffebee;
+}
+.cont .ethics_active li:nth-child(2) {
+  background-color: #fce4ec;
+}
+.cont .ethics_active li:nth-child(3) {
+  background-color: #ffcdd2;
+}
+.cont .ethics_active li:nth-child(4) {
+  background-color: #f8bbd0;
+}
+.cont .ethics_active li:nth-child(5) {
+  background-color: #d2001a;
+}
+
+.cont .ethics_active li div {
+  background: #fff;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cont .ethics_active li div p {
+  font-weight: 700;
+}
+
+.cont .ethics_active2 {
+  display: flex;
+  padding-top: 50px;
+  margin-left: 60px;
+}
+
+.cont .ethics_active2 li {
+  width: 33.3%;
+  margin: 0 10px 40px;
+  padding: 15px;
+  border-radius: 15px;
+  text-align: center;
+  background: rgba(244, 204, 204);
+  transition: all 0.4s ease-out;
+  color: #fff;
+}
+
+.cont .ethics_active2 li:hover {
+  background: #d2001a;
+}
+
+.ethics02 {
+  display: none;
+}
+
+.ethics02 p {
+  margin-bottom: 50px;
+}
+
+.ethics02 .ethics02_txt {
+  background: #f5f5f5;
+  padding: 50px;
+  line-height: 2;
+  font-size: 23px;
+}
+
+/* sub2_2 > 윤리경영 - 인권경영 */
+.human_rights {
+  margin: 80px 0 0;
+  position: relative;
+}
+
+.human_rights h3 {
+  font-size: 35px;
+  letter-spacing: -0.065rem;
+  margin: 80px 0 30px 15px;
+}
+
+.human_rights h3:after {
+  content: "";
+  width: 5px;
+  height: 32px;
+  position: absolute;
+  left: 2px;
+  background: #d2001a;
+}
+
+.human_rights img {
+  width: 1200px;
+  height: 400px;
+  margin: 50px 0 50px 0;
+}
+
+.human_rights .rights_txt {
+  line-height: 2;
+  font-size: 23px;
+}
+
+/* 임직원 고충처리제도 */
+.human_policy {
+  margin: 80px 0 0;
+  position: relative;
+}
+
+.human_policy h3 {
+  font-size: 35px;
+  letter-spacing: -0.065rem;
+  margin: 80px 0 30px 15px;
+}
+
+.human_policy h3:after {
+  content: "";
+  width: 5px;
+  height: 32px;
+  position: absolute;
+  left: 2px;
+  background: #d2001a;
+}
+
+.human_box {
+  display: flex;
+  margin-top: 50px;
+}
+
+.human_policy .human_box .policy {
+  border-radius: 15px;
+  box-shadow: 4px 2px #d2001a;
+}
+
+.human_policy .human_box:hover .policy {
+  border-radius: 15px;
+}
+
+.human_policy .box1,
+.box2 {
+  width: 570px;
+  height: 400px;
+  background: #f6f6f6;
+  margin: 0 0 100px 30px;
+  position: relative;
+}
+
+.human_policy .box1 img,
+.box2 img {
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+
+.human_policy .box1 .box1_txt,
+.box2 .box2_txt {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content: "";
+  background: #d2001a;
+  opacity: 0;
+  padding: 0 50px;
+  transition: all ease-out 0.5s;
+}
+
+.human_policy .box1 .box1_txt p,
+.box2 .box2_txt p {
+  color: #fff;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  left: 0;
+  font-size: 20px;
+  text-align: center;
+  line-height: 2;
+  padding: 50px;
+}
+
+.human_policy .box1:hover .box1_txt,
+.box2:hover .box2_txt {
+  opacity: 1;
+  border-radius: 15px;
+}
+
+.box1_txt .border_top,
+.box2_txt .border_top {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 10px;
+  right: 0;
+  width: 0px;
+  height: 2px;
+  background: #fff;
+  transition: all 0.3s ease-out;
+}
+
+.human_policy .box1:hover .border_top,
+.box2:hover .border_top {
+  width: 100%;
+  transition-delay: 0.2s;
+}
+
+.box1_txt .border_right,
+.box2_txt .border_right {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 0px;
+  right: 10px;
+  width: 2px;
+  height: 0px;
+  background: #fff;
+  transition: all 0.3s ease-out;
+}
+
+.human_policy .box1:hover .border_right,
+.box2:hover .border_right {
+  height: 100%;
+  transition-delay: 0s;
+}
+
+.box1_txt .border_bottom,
+.box2_txt .border_bottom {
+  content: "";
+  position: absolute;
+  display: block;
+  bottom: 10px;
+  right: 0px;
+  width: 0px;
+  height: 2px;
+  background: #fff;
+  transition: all 0.3s ease-out;
+}
+
+.human_policy .box1:hover .border_bottom,
+.box2:hover .border_bottom {
+  width: 100%;
+  transition-delay: 0.2s;
+}
+
+.box1_txt .border_left,
+.box2_txt .border_left {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 0px;
+  left: 10px;
+  width: 2px;
+  height: 0px;
+  background: #fff;
+  transition: all 0.3s ease-out;
+}
+
+.human_policy .box1:hover .border_left,
+.box2:hover .border_left {
+  height: 100%;
+  transition-delay: 0s;
+}
+
+/* sub2_3 > 윤리경영 - 안전보건 */
+.area1 {
+  padding-bottom: 200px;
+  margin-top: 150px;
+  overflow: hidden;
+  display: flex;
+}
+
+.area1 .area1_text {
+  width: 40%;
+  position: relative;
+}
+
+.area1 dt {
+  font-weight: 700;
+  font-size: 24px;
+  color: #333;
+  line-height: 1.5em;
+  margin-bottom: 100px;
+}
+
+.area1 dt span {
+  color: #d2001a;
+}
+
+.area1 dd {
+  font-weight: 400;
+  font-size: 18px;
+  color: #666;
+  line-height: 1.5em;
+  text-align: justify;
+  margin-bottom: 90px;
+}
+
+.area1 dd:last-child {
+  font-weight: 500;
+  font-size: 22px;
+  text-align: right;
+}
+
+.area1 dd span {
+  display: inline-block;
+  font-size: 22px;
+  font-weight: 500;
+  letter-spacing: -0.065em;
+  color: #000;
+  vertical-align: text-bottom;
+}
+
+.area1 dd b {
+  display: inline-block;
+  font-size: 30px;
+  letter-spacing: -0.065em;
+  color: #000;
+  margin-left: 14px;
+  opacity: 0;
+  -webkit-transform: translate3d(0, 100%, 0);
+  transform: translate3d(0, 100%, 0);
+  --animate-duration: 2.5s;
+}
+
+.area1 dd b.animate__animated.animate__fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+
+/* .area1 img {
+  width: 40%;
+  position: relative;
+  margin-left: 100px;
+  box-shadow: -50px 50px rgba(255, 0, 0, 0.2);
+  border-radius: 15px;
+} */
+
+/* sub2_4 > 윤리경영 - 임직원만족 */
+.satisfaction_con {
+  margin-top: 100px;
+}
+
+.satisfaction_con .satisfaction {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #d6d6d6;
+  padding: 40px 20px;
+  margin-top: 50px;
+}
+
+.satisfaction_con .satisfaction:first-child {
+  margin-top: 0;
+}
+
+.satisfaction dl {
+  width: calc(100% - 15rem);
+}
+
+.satisfaction dt {
+  display: flex;
+  align-items: center;
+  color: #333;
+  font-size: 25px;
+  font-weight: 600;
+  letter-spacing: -0.075em;
+  margin-bottom: 20px;
+}
+
+.satisfaction dt .num {
+  display: inline-block;
+  color: #d2001a;
+  font-size: 18px;
+  margin-right: 15px;
+}
+
+.satisfaction dd {
+  font-size: 17px;
+  font-weight: 400;
+  letter-spacing: -0.065em;
+  line-height: 1.94;
+}
+
+.satisfaction .icon {
+  display: block;
+  width: 158px;
+  height: 158px;
+  border: 22px solid #fce8eb;
+  border-radius: 50%;
+}
+
+.satisfaction .icon img {
+  display: block;
+  border: 1px solid #ffc5ce;
+  width: 100%;
+  border-radius: 50%;
+  box-sizing: border-box;
+}

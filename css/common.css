@@ -1,0 +1,481 @@
+@charset "utf-8";
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+/* font-family: 'Lato', sans-serif; */
+
+/* skip navi */
+.skipNav a {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  background: #d2001a;
+  color: #fff;
+  text-align: center;
+  z-index: 9999;
+  outline: none;
+}
+
+.skipNav a:hover,
+.skipNav a:focus,
+.skipNav a:active {
+  padding: 10px 0;
+  top: 0;
+  width: 100%;
+  height: auto;
+}
+
+.row {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.wrap {
+  /* width: 100%; */
+  font-family: "Lato", sans-serif;
+}
+
+/* header */
+#headerArea {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  transition: all 0.5s;
+  overflow: hidden;
+}
+
+#headerArea > .row {
+  position: relative;
+  height: 90px;
+}
+
+#headerArea h1 {
+  float: left;
+}
+
+#headerArea h1 a {
+  display: block;
+  width: 135px;
+  height: 29px;
+  background: url("../images/orion-logo2.png") no-repeat;
+  background-size: contain;
+  text-indent: -9999px;
+  margin-top: 30px;
+  overflow: hidden;
+}
+
+#headerArea .open {
+  display: none;
+}
+
+#headerArea .close {
+  display: none;
+}
+
+/* nav */
+#headerArea #nav {
+  float: left;
+  margin-left: 40px;
+}
+
+#headerArea .depth1 > li {
+  float: left;
+  padding: 0 50px;
+  position: relative;
+}
+
+#headerArea .depth1 > li::after {
+  content: "";
+  width: 0%;
+  position: absolute;
+  left: 0;
+  top: 80px;
+  background: #d2001a;
+  height: 2px;
+  transform: scaleX(0);
+  transition: all 0.2s ease-in-out;
+}
+
+#headerArea .depth1 > li:hover::after {
+  width: 100%;
+  transform: scaleX(1);
+}
+
+#headerArea .depth1 > li button {
+  display: none;
+}
+
+#headerArea .depth1 > li h3 a {
+  display: block;
+  color: #f5fbff;
+  height: 100px;
+  line-height: 100px;
+}
+
+#headerArea .depth1 > li:hover h3 a {
+  font-weight: 700;
+}
+
+#headerArea .depth1 > li h3 i {
+  display: none;
+}
+
+#headerArea .depth2 {
+  position: absolute;
+  top: 80%;
+  left: 0;
+  width: 100%;
+  height: 220px;
+  padding: 30px 0 0 10px;
+  /* transition: all .3s;  */
+  box-sizing: border-box;
+  display: none;
+}
+
+#headerArea .depth1 > li:hover ul {
+  background: #f5f5f5;
+}
+
+#headerArea .depth2 li a {
+  display: block;
+  line-height: 2.5;
+  letter-spacing: 0.05rem;
+  color: #06283d;
+  transition: all 0.3s;
+  text-align: center;
+}
+
+#headerArea .depth2 li:hover a {
+  color: #a8a0a0;
+}
+
+/* top_menu */
+#headerArea .top_menu {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#headerArea .top_menu a {
+  display: inline-block;
+  color: #888;
+  font-size: 0.93rem;
+  padding: 8px;
+}
+
+#headerArea .top_menu button {
+  width: 32px;
+  height: 32px;
+  font-size: 16px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 3px;
+  color: #f5fbff;
+}
+
+/* on */
+#headerArea.on {
+  background: #f5fbff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#headerArea.on h1 a {
+  background-image: url("../images/orion-logo.png");
+}
+
+#headerArea.on .depth1 > li h3 a {
+  color: #06283d;
+}
+
+#headerArea.on .depth1 > li:hover h3 a {
+  color: #d2001a;
+}
+
+#headerArea.on .top_menu button {
+  color: #d2001a;
+}
+
+/* footer */
+#footerArea {
+  position: relative;
+  width: 100%;
+  background: #eeeeee;
+  margin-top: 100px;
+  padding: 70px 0;
+  /* overflow: hidden; */
+}
+
+#footerArea .foot_link {
+  /* overflow: hidden; */
+  height: 70px;
+}
+
+#footerArea .f_logo {
+  float: left;
+}
+
+#footerArea .fnb {
+  float: left;
+  margin: 5px 0 0 70px;
+}
+
+#footerArea .fnb a {
+  float: left;
+  margin-left: 25px;
+  color: #666;
+  transition: color 0.3s;
+}
+
+#footerArea .fnb a:hover {
+  color: #06283d;
+}
+
+#footerArea .sns {
+  float: right;
+  padding-bottom: 15px;
+}
+
+#footerArea .sns a {
+  margin-left: 10px;
+}
+
+#footerArea .copy {
+  /* clear: both; */
+  position: relative;
+  border-top: 1px solid #dcdcdc;
+  padding: 25px 0;
+}
+
+#footerArea .copy .info {
+  float: left;
+}
+
+#footerArea .copy .info address {
+  color: #666;
+  line-height: 1.8;
+}
+
+#footerArea .copy .info address span {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+#footerArea .copy .info p {
+  color: #666;
+}
+
+#footerArea .family {
+  /* position: relative; */
+  position: absolute;
+  width: 160px;
+  height: 47px;
+  float: right;
+  right: 0;
+  top: 27px;
+  z-index: 9999;
+  background: url("../images/down_arrow.png") 90% 40% no-repeat;
+}
+
+#footerArea .family.on {
+  background: url("../images/up_arrow.png") 90% 40% no-repeat;
+}
+
+#footerArea .family .fam {
+  display: block;
+  border: 1px solid #dedede;
+  color: #666;
+  box-sizing: border-box;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition-property: color, background;
+  transition-duration: 0.3s;
+}
+
+#footerArea .fam ul {
+  position: absolute;
+  right: 0;
+  bottom: 100%;
+  width: 160px;
+  background: #fff;
+  z-index: 9999;
+  overflow-y: auto;
+  display: none;
+}
+
+#footerArea .fam.active ul {
+  height: 160px;
+}
+
+#footerArea .fam ul li a {
+  display: block;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 10px;
+  font-size: 14px;
+  color: #666;
+  transition: all 0.3s ease-in-out;
+}
+
+#footerArea .fam ul li a:hover {
+  background: #06283d;
+  color: #fff;
+}
+
+/* top move */
+#gotop {
+  position: fixed;
+  right: 30px;
+  bottom: 200px;
+  z-index: 9999;
+  display: none;
+}
+
+#gotop a {
+  display: inline-block;
+  width: 32px;
+  height: 34px;
+  background: #d2001a;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+  line-height: 34px;
+  transition: all 0.4s;
+}
+
+#gotop a:hover {
+  background: #ff6565;
+}
+
+/* popup */
+.popup {
+  position: fixed;
+  top: 200px;
+  right: 200px;
+  width: 300px;
+  height: 270px;
+  border: 2px solid #f4f4f4;
+  z-index: 999999999;
+  background: #fff;
+  padding: 10px;
+  display: none;
+}
+
+.popup.on {
+  display: block;
+}
+
+.popup .close {
+  background: #000;
+  color: #fff;
+  padding: 5px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.popup .close button {
+  position: absolute;
+  top: 3px;
+  right: 5px;
+}
+
+.popup .close button i {
+  color: #fff;
+}
+
+/* search */
+#headerArea .inner {
+  position: relative;
+}
+
+.inner .product_search {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 999999;
+  display: none;
+}
+
+.product_search.on {
+  display: block;
+}
+
+.product_search_inner {
+  display: inline-block;
+  background: #fff;
+  width: 100%;
+  height: 50%;
+  position: absolute;
+  top: 0;
+}
+
+.product_search_inner form {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translateY(-50%);
+}
+
+.product_search_inner p {
+  font-size: 30px;
+  font-weight: 600;
+  color: #06283d;
+  line-height: 100px;
+}
+
+.product_search #find {
+  border: none;
+  width: 500px;
+  padding: 20px;
+  border-bottom: 3px solid #06283d;
+}
+
+.product_search #find:focus {
+  outline: none;
+}
+
+.product_search #search {
+  width: 45px;
+  height: 40px;
+  border: none;
+  background: url(../images/search2.png) 50% 50% no-repeat;
+  background-size: 30px auto;
+  text-indent: -9999px;
+  cursor: pointer;
+}
+
+.search_close {
+  position: absolute;
+  right: 50%;
+  top: 52px;
+  margin-right: -600px;
+  transform: rotate(0);
+  display: none;
+  width: 21px;
+  height: 20px;
+  background: url(../images/close.png) 50% 50% no-repeat;
+  background-size: 21px auto;
+  z-index: 999999;
+  text-indent: -9999px;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.search_close.on {
+  display: block;
+}
+
+.search_close:hover {
+  transform: rotate(180deg);
+}

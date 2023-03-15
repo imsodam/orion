@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ORION Practice</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="./images/orion_favicon.ico"
+    />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/rwdcommon.css" />
+    <link rel="stylesheet" href="./css/sub1.css" />
+    <!-- [if lt IE 9]>
+        <script src="./js/html5shiv.min.js"></script>
+    <![endif]-->
+    <script src="./js/prefixfree.min.js"></script>
+    <script src="./js/jquery-1.12.4.min.js"></script>
+  </head>
+
+  <body>
+    <div class="skipNav">
+      <a href="#content">본문 바로가기</a>
+      <a href="#gnb">글로벌 네비게이션 바로가기</a>
+    </div>
+
+    <div class="wrap">
+      <header id="headerArea">
+        <div class="row cf">
+          <h1><a href="./index.html">오리온로고</a></h1>
+          <div class="open">
+            <span class="blind">메뉴열기</span>
+            <i class="fa-solid fa-bars"></i>
+          </div>
+          <nav id="nav">
+            <h2 class="blind">글로벌 네비게이션 영역</h2>
+            <ul class="depth1">
+              <li class="m1">
+                <h3>
+                  <a class="menu_title" href="./sub1_1.html">회사소개</a>
+                </h3>
+                <button type="button">
+                  <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <ul class="depth2">
+                  <li><a href="./sub1_1.html">오리온 소개</a></li>
+                  <li><a href="./sub1_2.html">경영방침</a></li>
+                  <li><a href="./sub1_3.html">주요연혁</a></li>
+                  <li><a href="./sub1_4.html">위치안내</a></li>
+                </ul>
+              </li>
+              <li class="m2">
+                <h3>
+                  <a class="menu_title" href="./sub2_1.html">윤리경영</a>
+                </h3>
+                <button type="button">
+                  <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <ul class="depth2">
+                  <li><a href="./sub2_1.html">윤리경영체계</a></li>
+                  <li><a href="./sub2_2.html">인권경영</a></li>
+                  <li><a href="./sub2_3.html">안전보건</a></li>
+                  <li><a href="./sub2_4.html">임직원만족</a></li>
+                </ul>
+              </li>
+              <li class="m3">
+                <h3>
+                  <a class="menu_title" href="#">사회공헌</a>
+                </h3>
+                <button type="button">
+                  <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <ul class="depth2">
+                  <li><a href="#">사회공헌소개</a></li>
+                  <li><a href="#">친환경경영</a></li>
+                  <li><a href="#">주요성과</a></li>
+                </ul>
+              </li>
+              <li class="m4">
+                <h3>
+                  <a class="menu_title" href="#">인재채용</a>
+                </h3>
+                <button type="button">
+                  <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <ul class="depth2">
+                  <li><a href="#">인사제도</a></li>
+                  <li><a href="#">채용정보</a></li>
+                  <li><a href="#">복리후생</a></li>
+                </ul>
+              </li>
+              <li class="m5">
+                <h3>
+                  <a class="menu_title" href="#">뉴스룸</a>
+                </h3>
+                <button type="button">
+                  <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <ul class="depth2">
+                  <li><a href="#">유튜브</a></li>
+                  <li><a href="#">인스타그램</a></li>
+                  <li><a href="#">보도자료</a></li>
+                </ul>
+              </li>
+              <li class="m6">
+                <h3>
+                  <a class="menu_title" href="#">고객센터</a>
+                </h3>
+                <button type="button">
+                  <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <ul class="depth2">
+                  <li><a href="#">FAQ</a></li>
+                  <li><a href="#">고객상담신청</a></li>
+                  <li><a href="#">피해보상기구</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+          <div class="close">
+            <span class="blind">메뉴닫기</span>
+            <i class="fa-solid fa-times"></i>
+          </div>
+          <div class="top_menu">
+            <a href="#">로그인</a>
+            <a href="#">회원가입</a>
+            <button type="button">
+              <span class="blind">검색버튼</span>
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </div>
+          <div class="inner">
+            <div class="product_search">
+              <div class="product_search_inner">
+                <form name="search_form" method="post" action="/">
+                  <p>오리온의 제품을 검색해보세요</p>
+                  <label class="blind" for="find">검색어 입력</label>
+                  <input
+                    type="text"
+                    id="find"
+                    name="find"
+                    placeholder="제품명을 입력하세요"
+                  />
+                  <label class="blind" for="search">검색</label>
+                  <input type="submit" id="search" name="search" value="검색" />
+                </form>
+              </div>
+            </div>
+            <a href="#" class="search_close">닫기</a>
+          </div>
+        </div>
+      </header>
+
+      <div class="visual">
+        <img src="./images/bg_sub01.jpg" alt="" />
+        <h3>회사소개</h3>
+      </div>
+
+      <div class="sub_menu">
+        <ul>
+          <li>
+            <a href="./sub1_1.html">오리온 소개</a>
+          </li>
+          <li>
+            <a href="./sub1_2.html">경영방침</a>
+          </li>
+          <li class="current">
+            <a href="./sub1_3.html">주요연혁</a>
+          </li>
+          <li>
+            <a href="./sub1_4.html">위치안내</a>
+          </li>
+        </ul>
+      </div>
+
+      <article id="content">
+        <div class="title_area">
+          <div class="line_map">
+            <span>HOME</span>
+            <span>회사소개</span>
+            <span>주요연혁</span>
+          </div>
+          <h2>주요연혁</h2>
+        </div>
+
+        <div class="content_area">
+          <div class="summary">
+            <p>오리온의 발자취를 소개합니다.</p>
+            <span
+              >제과를 넘어 글로벌 식품·헬스케어 기업으로 세계를 무대로 더 높이
+              도약합니다.</span
+            >
+          </div>
+
+          <div class="tabbox">
+            <div class="tab">
+              <ul>
+                <li class="current"><a href="#">2016~2022</a></li>
+                <li><a href="#">1993~2015</a></li>
+                <li><a href="#">1974~1992</a></li>
+                <li><a href="#">1956~1973</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="history_wrap">
+            <div class="year kframe" id="y2000">
+              <h3>2016 ~ 2022</h3>
+              <dl>
+                <dt>2022</dt>
+                <dd>
+                  <p>‘닥터유 제주용암수 무라벨’, ’닥터유 면역수’ 출시</p>
+                  <br />
+                  <p>ESG위원회 설립</p>
+                  <br />
+                  <p>환경경영시스템(ISO14001) 인증 획득</p>
+                </dd>
+              </dl>
+              <dl>
+                <dt>2021</dt>
+                <dd>
+                  <p>인도 라자스탄 공장 준공</p>
+                  <br />
+                  <p>초코파이 글로벌 연매출 5천억원 돌파</p>
+                  <br />
+                  <p>
+                    베트남, 러시아 법인 사상 첫 연 매출 3천억 원, 1천억 원 돌파
+                  </p>
+                  <br />
+                  <p>중국 암 체외진단 제품 생산설비 구축</p>
+                  <br />
+                  <p>글로벌 탄소배출 통합관리체계 구축</p>
+                </dd>
+              </dl>
+              <dl>
+                <dt>2020</dt>
+                <dd>
+                  <p>
+                    중국 국영 제약기업 ‘산둥루캉의약’ 바이오 사업 합자계약 체결
+                  </p>
+                  <br />
+                  <p>‘닥터유 단백질바’ 출시</p>
+                </dd>
+              </dl>
+              <dl>
+                <dt>2019</dt>
+                <dd>
+                  <p>오리온제주용암수 공장 준공</p>
+                  <br />
+                  <p>‘닥터유 제주용암수’ 출시</p>
+                  <br />
+                  <p>환경친화적 포장재 인쇄설비 플렉소 기기 도입</p>
+                </dd>
+                <dd class="img">
+                  <img
+                    src="./images/history_2019.jpeg"
+                    alt="‘닥터유 제주용암수’ 출시"
+                  />
+                </dd>
+              </dl>
+              <dl>
+                <dt>2018</dt>
+                <dd>
+                  <p>오리온농협 밀양공장 준공</p>
+                  <br />
+                  <p>간편대용식 브랜드 ‘마켓오 네이처’ 론칭</p>
+                  <br />
+                  <p>제과업계 최초 환경부 ‘녹색 인증’ 획득</p>
+                  <br />
+                  <p>인도 법인 설립</p>
+                </dd>
+                <dd class="img">
+                  <img
+                    src="./images/history_2018.jpeg"
+                    alt="간편대용식 브랜드 ‘마켓오 네이처’ 론칭"
+                  />
+                </dd>
+              </dl>
+              <dl>
+                <dt>2017</dt>
+                <dd>
+                  <p>4겹 스낵 ‘꼬북칩’ 출시</p>
+                </dd>
+                <dd class="img">
+                  <img
+                    src="./images/history_2017.jpeg"
+                    alt="4겹 스낵 ‘꼬북칩’ 출시"
+                  />
+                </dd>
+              </dl>
+              <dl>
+                <dt>2016</dt>
+                <dd>
+                  <p>베트남 연 매출 2천억 원 돌파</p>
+                  <br />
+                  <p>프리미엄 가공식품 생산을 위한 오리온-농협 합작법인 설립</p>
+                </dd>
+              </dl>
+            </div>
+            <div class="year kframe" id="y1990">
+              <h3>1993 ~ 2015</h3>
+              <dl>
+                <dt>2015</dt>
+                <dd>
+                  <p>베트남 누적 매출 1조 원 돌파</p>
+                  <br />
+                  <p>윤리경영 선포</p>
+                </dd>
+                <dd class="img">
+                  <img
+                    src="./images/history_2015.jpeg"
+                    alt="베트남 누적 매출 1조 원 돌파
+                    "
+                  />
+                </dd>
+              </dl>
+              <dl>
+                <dt>2014</dt>
+                <dd>
+                  <p>국내 제과업계 최초 ‘착한 포장’ 실시</p>
+                  <br />
+                  <p>중국 셴양 공장 준공</p>
+                </dd>
+              </dl>
+              <dl>
+                <dt>2013</dt>
+                <dd>
+                  <p>중국 연 매출 1조 원 돌파</p>
+                </dd>
+              </dl>
+              <dl>
+                <dt>2010</dt>
+                <dd>
+                  <p>중국 광저우 공장 준공</p>
+                </dd>
+              </dl>
+              <dl>
+                <dt>2009</dt>
+                <dd>
+                  <p>베트남 옌퐁 공장 준공</p>
+                  <br />
+                  <p>국내 제과업계 최초 전 공장 HACCP 인증</p>
+                </dd>
+                <dd class="img">
+                  <img
+                    src="./images/history_2009.jpeg"
+                    alt="베트남 옌퐁 공장 준공"
+                  />
+                </dd>
+              </dl>
+              <dl>
+                <dt>2008</dt>
+                <dd>
+                  <p>러시아 노보 공장 준공</p>
+                  <br />
+                  <p>‘닥터유’, ‘마켓오’ 브랜드 론칭</p>
+                </dd>
+              </dl>
+              <dl>
+                <dt>2006</dt>
+                <dd>
+                  <p>중국 랑팡 2공장 준공</p>
+                  <br />
+                  <p>베트남 미푹 공장 준공</p>
+                  <br />
+                  <p>러시아 뜨베리 공장 준공</p>
+                </dd>
+                <dd class="img">
+                  <img
+                    src="./images/history_2006.jpeg"
+                    alt="중국 랑팡 2공장 준공"
+                  />
+                </dd>
+              </dl>
+              <dl>
+                <dt>2005</dt>
+                <dd>
+                  <p>베트남 법인 설립</p>
+                </dd>
+              </dl>
+              <dl>
+                <dt>2003</dt>
+                <dd>
+                  <p>㈜오리온으로 사명 변경</p>
+                  <br />
+                  <p>러시아 법인 설립</p>
+                </dd>
+              </dl>
+              <dl>
+                <dt>2010</dt>
+                <dd>
+                  <p>중국 광저우 공장 준공</p>
+                </dd>
+              </dl>
+              <dl>
+                <dt>2002</dt>
+                <dd>
+                  <p>중국 상하이 공장 준공</p>
+                </dd>
+              </dl>
+              <dl>
+                <dt>2001</dt>
+                <dd>
+                  <p>오리온그룹 출범</p>
+                </dd>
+              </dl>
+              <dl>
+                <dt>1997</dt>
+                <dd>
+                  <p>중국 랑팡 1공장 준공</p>
+                </dd>
+                <dd class="img">
+                  <img
+                    src="./images/history_1997.jpeg"
+                    alt="중국 랑팡 1공장 준공"
+                  />
+                </dd>
+              </dl>
+              <dl>
+                <dt>1996</dt>
+                <dd>
+                  <p>수출 300억 원 달성</p>
+                </dd>
+              </dl>
+              <dl>
+                <dt>1995</dt>
+                <dd>
+                  <p>중국 법인 설립</p>
+                  <br />
+                  <p>수출 1천만불탑 수상</p>
+                </dd>
+              </dl>
+              <dl>
+                <dt>1993</dt>
+                <dd>
+                  <p>중국 베이징사무소 개소</p>
+                  <br />
+                  <p>초코파이情 러시아 첫 수출</p>
+                </dd>
+                <dd class="img">
+                  <img
+                    src="./images/history_1993.jpeg"
+                    alt="초코파이情 러시아 첫 수출"
+                  />
+                </dd>
+              </dl>
+            </div>
+            <div class="year kframe" id="y1980">
+              <h3>1974 ~ 1992</h3>
+              <dl>
+                <dt>1989</dt>
+                <dd>
+                  <p>초코파이情 광고 시리즈 시작</p>
+                  <br />
+                  <p>국내 최초의 구취 제거 기능 껌 ‘후라보노’ 출시</p>
+                </dd>
+              </dl>
+              <dl>
+                <dt>1988</dt>
+                <dd>
+                  <p>생감자칩 ‘포카칩’ 출시, 감자연구소 설립</p>
+                </dd>
+                <dd class="img">
+                  <img
+                    src="./images/history_1988.jpeg"
+                    alt="생감자칩 ‘포카칩’ 출시"
+                  />
+                </dd>
+              </dl>
+              <dl>
+                <dt>1983</dt>
+                <dd>
+                  <p>‘다이제’ 출시</p>
+                </dd>
+              </dl>
+              <dl>
+                <dt>1977</dt>
+                <dd>
+                  <p>국내 최초 비스킷 자동 포장</p>
+                </dd>
+              </dl>
+              <dl>
+                <dt>1976</dt>
+                <dd>
+                  <p>‘오징어땅콩’ 출시</p>
+                  <br />
+                  <p>껌 수출 시작</p>
+                </dd>
+              </dl>
+              <dl>
+                <dt>1975</dt>
+                <dd>
+                  <p>기업공개(IPO) – 166만 주</p>
+                </dd>
+              </dl>
+              <dl>
+                <dt>1974</dt>
+                <dd>
+                  <p>오리온 최고 히트상품 ‘초코파이情’ 출시</p>
+                </dd>
+                <dd class="img">
+                  <img
+                    src="./images/history_1974.jpeg"
+                    alt="오리온 최고 히트상품 ‘초코파이情’ 출시"
+                  />
+                </dd>
+              </dl>
+            </div>
+            <div class="year kframe" id="y1970">
+              <h3>1956 ~ 1973</h3>
+              <dl>
+                <dt>1968</dt>
+                <dd>
+                  <p>캔디 자동 포장화 공정 시작</p>
+                  <br />
+                  <p>판 초콜릿 제조, 국내시장 석권</p>
+                </dd>
+              </dl>
+              <dl>
+                <dt>1962</dt>
+                <dd>
+                  <p>
+                    천연과즙향의 ‘후르쯔드롭프스’,<br />츄잉 소프트캔디
+                    ‘츄낫캔디’ 출시
+                  </p>
+                  <br />
+                  <p>‘해피비스킷’, ‘오리온 크래카’ 출시</p>
+                </dd>
+                <dd class="img">
+                  <img
+                    src="./images/history_1962.jpeg"
+                    alt="‘해피비스킷’, ‘오리온 크래카’ 출시
+                    "
+                  />
+                </dd>
+              </dl>
+              <dl>
+                <dt>1960</dt>
+                <dd>
+                  <p>현대식 비스킷 '마미비스킷'출시</p>
+                </dd>
+                <dd class="img">
+                  <img
+                    src="./images/history_1960.jpeg"
+                    alt="현대식 비스킷 '마미비스킷'출시"
+                  />
+                </dd>
+              </dl>
+              <dl>
+                <dt>1958</dt>
+                <dd>
+                  <p>소프트 비스킷 제조를 위한 자동 성형기 도입</p>
+                </dd>
+              </dl>
+              <dl>
+                <dt>1957</dt>
+                <dd>
+                  <p>국내 최초 근대식 캔디 제조 시설 도입</p>
+                  <br />
+                  <p>‘킹드롭프스’ 출시</p>
+                </dd>
+                <dd class="img">
+                  <img
+                    src="./images/history_1957.jpeg"
+                    alt="국내 최초 근대식 캔디 제조 시설 도입"
+                  />
+                </dd>
+              </dl>
+              <dl>
+                <dt>1956</dt>
+                <dd>
+                  <p>오리온 설립(당시 동양제과)</p>
+                </dd>
+              </dl>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <footer id="footerArea">
+        <div class="footerInner row">
+          <div class="footer_link cf">
+            <img src="./images/orion-logo.png" class="f_logo" alt="오리온" />
+            <div class="fnb">
+              <a href="#">이용약관</a>
+              <a href="#">개인정보처리방침</a>
+              <a href="#">이메일주소 무단수집거부</a>
+            </div>
+            <div class="sns">
+              <a
+                href="https://www.youtube.com/c/ORIONworld"
+                target="_blank"
+                title="오리온 유튜브 새창으로 열기"
+                ><img src="./images/ico-youtube.svg" /><span class="blind"
+                  >유튜브</span
+                ></a
+              >
+              <a
+                href="https://blog.naver.com/orionblog"
+                target="_blank"
+                title="오리온 블로그 새창으로 열기"
+                ><img src="./images/ico-blog.svg" /><span class="blind"
+                  >블로그</span
+                ></a
+              >
+              <a
+                href="https://ko-kr.facebook.com/onlyorion/"
+                target="_blank"
+                title="오리온 페이스북 새창으로 열기"
+                ><img src="./images/ico-facebook.svg" /><span class="blind"
+                  >페이스북</span
+                ></a
+              >
+              <a
+                href="https://www.instagram.com/orion_world/"
+                target="_blank"
+                title="오리온 인스타그램 새창으로 열기"
+                ><img src="./images/ico-instagram.svg" /><span class="blind"
+                  >인스타그램</span
+                ></a
+              >
+            </div>
+          </div>
+          <div class="copy cf">
+            <div class="info">
+              <address>
+                <span>서울시 용산구 백범로 90다길 13</span>
+                <span>고객센터 : 080.023.5700</span>
+                <span>팩스 : 080.023.5700</span>
+              </address>
+              <p>Copyright © POSCO M-TECH. All Rights Reserved.</p>
+            </div>
+            <div class="family">
+              <div class="fam">
+                FAMILY SITE
+                <ul class="list">
+                  <li>
+                    <a href="https://www.jejuyongamsoo.com/" target="_blank"
+                      >닥터유 제주용암수</a
+                    >
+                  </li>
+                  <li>
+                    <a href="http://www.oriongroup.co.kr/" target="_blank"
+                      >오리온홀딩스</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://showbox.co.kr/" target="_blank">쇼박스</a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.orionjejuyongamsoo.com/"
+                      target="_blank"
+                      >오리온제주용암수</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://www.orion.cn/" target="_blank"
+                      >오리온 중국 법인</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://orion.vn/" target="_blank"
+                      >오리온 베트남 법인</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://www.orionworld.ru/" target="_blank"
+                      >오리온 러시아 법인</a
+                    >
+                  </li>
+                  <li>
+                    <a href="http://www.orionindia.com" target="_blank"
+                      >오리온 인도 법인</a
+                    >
+                  </li>
+                  <li>
+                    <a href="http://www.orionfoundation.or.kr/" target="_blank"
+                      >오리온재단</a
+                    >
+                  </li>
+                  <li>
+                    <a href="http://restaurant.themarketo.com/" target="_blank"
+                      >마켓오 레스토랑</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <div id="gotop">
+        <a href="#"
+          ><span class="blind">맨위로</span><i class="fa-solid fa-arrow-up"></i
+        ></a>
+      </div>
+    </div>
+
+    <script src="./js/common.js"></script>
+    <script src="./js/sub1.js"></script>
+  </body>
+</html>
