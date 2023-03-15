@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ORION Practice</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="./images/orion_favicon.ico"
+    />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/rwdcommon.css" />
+    <link rel="stylesheet" href="./css/sub1.css" />
+    <link rel="stylesheet" href="./css/sub2.css" />
+    <!-- [if lt IE 9]>
+        <script src="./js/html5shiv.min.js"></script>
+    <![endif]-->
+    <script src="./js/prefixfree.min.js"></script>
+    <script src="./js/jquery-1.12.4.min.js"></script>
+  </head>
+
+  <body>
+    <div class="skipNav">
+      <a href="#content">본문 바로가기</a>
+      <a href="#gnb">글로벌 네비게이션 바로가기</a>
+    </div>
+
+    <div class="wrap">
+      <header id="headerArea">
+        <div class="row cf">
+          <h1><a href="./index.html">오리온로고</a></h1>
+          <div class="open">
+            <span class="blind">메뉴열기</span>
+            <i class="fa-solid fa-bars"></i>
+          </div>
+          <nav id="nav">
+            <h2 class="blind">글로벌 네비게이션 영역</h2>
+            <ul class="depth1">
+              <li class="m1">
+                <h3>
+                  <a class="menu_title" href="./sub1_1.html">회사소개</a>
+                </h3>
+                <button type="button">
+                  <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <ul class="depth2">
+                  <li><a href="./sub1_1.html">오리온 소개</a></li>
+                  <li><a href="./sub1_2.html">경영방침</a></li>
+                  <li><a href="./sub1_3.html">주요연혁</a></li>
+                  <li><a href="./sub1_4.html">위치안내</a></li>
+                </ul>
+              </li>
+              <li class="m2">
+                <h3>
+                  <a class="menu_title" href="./sub2_1.html">윤리경영</a>
+                </h3>
+                <button type="button">
+                  <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <ul class="depth2">
+                  <li><a href="./sub2_1.html">윤리경영체계</a></li>
+                  <li><a href="./sub2_2.html">인권경영</a></li>
+                  <li><a href="./sub2_3.html">안전보건</a></li>
+                  <li><a href="./sub2_4.html">임직원만족</a></li>
+                </ul>
+              </li>
+              <li class="m3">
+                <h3>
+                  <a class="menu_title" href="#">사회공헌</a>
+                </h3>
+                <button type="button">
+                  <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <ul class="depth2">
+                  <li><a href="#">사회공헌소개</a></li>
+                  <li><a href="#">친환경경영</a></li>
+                  <li><a href="#">주요성과</a></li>
+                </ul>
+              </li>
+              <li class="m4">
+                <h3>
+                  <a class="menu_title" href="#">인재채용</a>
+                </h3>
+                <button type="button">
+                  <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <ul class="depth2">
+                  <li><a href="#">인사제도</a></li>
+                  <li><a href="#">채용정보</a></li>
+                  <li><a href="#">복리후생</a></li>
+                </ul>
+              </li>
+              <li class="m5">
+                <h3>
+                  <a class="menu_title" href="#">뉴스룸</a>
+                </h3>
+                <button type="button">
+                  <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <ul class="depth2">
+                  <li><a href="#">유튜브</a></li>
+                  <li><a href="#">인스타그램</a></li>
+                  <li><a href="#">보도자료</a></li>
+                </ul>
+              </li>
+              <li class="m6">
+                <h3>
+                  <a class="menu_title" href="#">고객센터</a>
+                </h3>
+                <button type="button">
+                  <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <ul class="depth2">
+                  <li><a href="#">FAQ</a></li>
+                  <li><a href="#">고객상담신청</a></li>
+                  <li><a href="#">피해보상기구</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+          <div class="close">
+            <span class="blind">메뉴닫기</span>
+            <i class="fa-solid fa-times"></i>
+          </div>
+          <div class="top_menu">
+            <a href="#">로그인</a>
+            <a href="#">회원가입</a>
+            <button type="button">
+              <span class="blind">검색버튼</span>
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </div>
+          <div class="inner">
+            <div class="product_search">
+              <div class="product_search_inner">
+                <form name="search_form" method="post" action="/">
+                  <p>오리온의 제품을 검색해보세요</p>
+                  <label class="blind" for="find">검색어 입력</label>
+                  <input
+                    type="text"
+                    id="find"
+                    name="find"
+                    placeholder="제품명을 입력하세요"
+                  />
+                  <label class="blind" for="search">검색</label>
+                  <input type="submit" id="search" name="search" value="검색" />
+                </form>
+              </div>
+            </div>
+            <a href="#" class="search_close">닫기</a>
+          </div>
+        </div>
+      </header>
+
+      <div class="visual">
+        <img src="./images/bg_sub02.jpg" alt="" />
+        <h3>윤리경영</h3>
+      </div>
+
+      <div class="sub_menu">
+        <ul>
+          <li class="current">
+            <a href="./sub2_1.html">윤리경영체계</a>
+          </li>
+          <li>
+            <a href="./sub2_2.html">인권경영</a>
+          </li>
+          <li>
+            <a href="./sub2_3.html">안전보건</a>
+          </li>
+          <li>
+            <a href="./sub2_4.html">임직원만족</a>
+          </li>
+        </ul>
+      </div>
+
+      <article id="content">
+        <div class="title_area">
+          <div class="line_map">
+            <span>HOME</span>
+            <span>윤리경영</span>
+            <span>윤리경영체계</span>
+          </div>
+          <h2>윤리경영체계</h2>
+        </div>
+
+        <div class="content_area">
+          <div class="summary">
+            <p>오리온그룹은 2015년 「윤리경영」을 주요 경영방침으로 선포</p>
+            <span
+              >오리온은 준법과 윤리에 기반한 경영활동을 통하여 지속적인 성장과
+              기업의 사회적 책임을 다하기 위해 전 법인이 함께 노력합니다.</span
+            >
+          </div>
+
+          <div class="tab w2">
+            <ul>
+              <li class="current"><a href="/">추진체계</a></li>
+              <li><a href="/">실천지침</a></li>
+            </ul>
+          </div>
+
+          <div class="cont ethics">
+            <h3>윤리경영 추진체계</h3>
+            <p>
+              한국을 비롯한 전 법인에 윤리경영을 추진하는 전담조직(CSR팀)을 두고
+              그룹 공통의 윤리경영 체계 아래 윤리적 기업문화를 조성해나가며
+              이해관계자별 윤리경영활동을 추진하고 있습니다.
+            </p>
+            <h4>이해관계자별 활동</h4>
+            <img src="./images/up-arrow.png" alt="" />
+            <ul class="ethics_active">
+              <li>
+                <div><p>임직원</p></div>
+              </li>
+              <li>
+                <div><p>고객</p></div>
+              </li>
+              <li>
+                <div>
+                  <p>협력<br />회사</p>
+                </div>
+              </li>
+              <li>
+                <div><p>주주</p></div>
+              </li>
+              <li>
+                <div><p>사회</p></div>
+              </li>
+            </ul>
+            <ul class="ethics_active2">
+              <li>윤리규범</li>
+              <li>전파/소통</li>
+              <li>제도/시스템</li>
+            </ul>
+          </div>
+
+          <div class="cont ethics02">
+            <h3>윤리규범 및 실천지침</h3>
+            <p>
+              오리온은 윤리경영 지향점 및 이해관계자별 실천방향, 임직원
+              기본윤리로 구성된 「그룹 윤리규범 및 실천지침」을 제정하여 전 법인
+              임직원이 이를 바탕으로 업무와 연계한 윤리경영 활동을 실천하고
+              있습니다.
+            </p>
+            <div class="ethics02_txt">
+              <p>
+                오리온그룹이 지향하는 윤리경영은 준법과 윤리에 기반한 경영활동을
+                통해 모든 이해관계자에게 기여함으로써 지속적으로 성장해 나가는
+                것입니다.
+              </p>
+              <p>
+                우리는 임직원의 행복과 발전을 중시합니다.<br />우리는 임직원을
+                최우선으로 생각하며, 상호 신뢰와 존중을 바탕으로 행복과 발전을
+                추구할 수 있는 환경을 조성합니다.
+              </p>
+              <p>
+                우리는 고객의 만족을 추구합니다.<br />
+                우리는 정직하고 안전하게 만든 양질의 제품을 합리적인 가격에
+                공급하며, 고객이 원하는 가치를 제공함으로써 고객의 만족을
+                추구합니다.
+              </p>
+              <p>
+                우리는 협력회사와 동반성장을 실현합니다.<br />우리는 협력회사를
+                존중하며, 공정하고 투명한 거래관계를 바탕으로 상생협력을
+                도모함으로써 장기적 동반성장을 실현합니다.
+              </p>
+              <p>
+                우리는 주주가치를 중대합니다.<br />우리는 투명하고 효율적인
+                경영활동과 신성장동력 발굴을 통하여 기업가치를 극대화함으로써
+                주주가치를 중대합니다.
+              </p>
+              <p>
+                우리는 사회에 대한 책임을 다합니다.<br />
+                우리는 성장에 기반한 고용창출 및 지속적인 사회공헌활동을 통하여
+                기업의 사회적 책임을 다하며 사회 발전에 기여합니다.
+              </p>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <footer id="footerArea">
+        <div class="footerInner row">
+          <div class="footer_link cf">
+            <img src="./images/orion-logo.png" class="f_logo" alt="오리온" />
+            <div class="fnb">
+              <a href="#">이용약관</a>
+              <a href="#">개인정보처리방침</a>
+              <a href="#">이메일주소 무단수집거부</a>
+            </div>
+            <div class="sns">
+              <a
+                href="https://www.youtube.com/c/ORIONworld"
+                target="_blank"
+                title="오리온 유튜브 새창으로 열기"
+                ><img src="./images/ico-youtube.svg" /><span class="blind"
+                  >유튜브</span
+                ></a
+              >
+              <a
+                href="https://blog.naver.com/orionblog"
+                target="_blank"
+                title="오리온 블로그 새창으로 열기"
+                ><img src="./images/ico-blog.svg" /><span class="blind"
+                  >블로그</span
+                ></a
+              >
+              <a
+                href="https://ko-kr.facebook.com/onlyorion/"
+                target="_blank"
+                title="오리온 페이스북 새창으로 열기"
+                ><img src="./images/ico-facebook.svg" /><span class="blind"
+                  >페이스북</span
+                ></a
+              >
+              <a
+                href="https://www.instagram.com/orion_world/"
+                target="_blank"
+                title="오리온 인스타그램 새창으로 열기"
+                ><img src="./images/ico-instagram.svg" /><span class="blind"
+                  >인스타그램</span
+                ></a
+              >
+            </div>
+          </div>
+          <div class="copy cf">
+            <div class="info">
+              <address>
+                <span>서울시 용산구 백범로 90다길 13</span>
+                <span>고객센터 : 080.023.5700</span>
+                <span>팩스 : 080.023.5700</span>
+              </address>
+              <p>Copyright © POSCO M-TECH. All Rights Reserved.</p>
+            </div>
+            <div class="family">
+              <div class="fam">
+                FAMILY SITE
+                <ul class="list">
+                  <li>
+                    <a href="https://www.jejuyongamsoo.com/" target="_blank"
+                      >닥터유 제주용암수</a
+                    >
+                  </li>
+                  <li>
+                    <a href="http://www.oriongroup.co.kr/" target="_blank"
+                      >오리온홀딩스</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://showbox.co.kr/" target="_blank">쇼박스</a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.orionjejuyongamsoo.com/"
+                      target="_blank"
+                      >오리온제주용암수</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://www.orion.cn/" target="_blank"
+                      >오리온 중국 법인</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://orion.vn/" target="_blank"
+                      >오리온 베트남 법인</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://www.orionworld.ru/" target="_blank"
+                      >오리온 러시아 법인</a
+                    >
+                  </li>
+                  <li>
+                    <a href="http://www.orionindia.com" target="_blank"
+                      >오리온 인도 법인</a
+                    >
+                  </li>
+                  <li>
+                    <a href="http://www.orionfoundation.or.kr/" target="_blank"
+                      >오리온재단</a
+                    >
+                  </li>
+                  <li>
+                    <a href="http://restaurant.themarketo.com/" target="_blank"
+                      >마켓오 레스토랑</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <div id="gotop">
+        <a href="#"
+          ><span class="blind">맨위로</span><i class="fa-solid fa-arrow-up"></i
+        ></a>
+      </div>
+    </div>
+
+    <script src="./js/common.js"></script>
+    <script src="./js/sub2.js"></script>
+  </body>
+</html>
