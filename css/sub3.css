@@ -1,0 +1,318 @@
+@charset "utf-8";
+
+.sub_menu li {
+  width: 33.33%;
+}
+
+/* sub3_1 > 사회공헌 - 사회공헌소개 */
+.contribution {
+  margin: 80px 0 0;
+  position: relative;
+}
+
+.contribution h3 {
+  font-size: 35px;
+  letter-spacing: -0.065rem;
+  margin: 80px 0 100px 15px;
+}
+
+.contribution h3::after {
+  content: "";
+  width: 5px;
+  height: 32px;
+  position: absolute;
+  left: 2px;
+  background: #d2001a;
+}
+
+.contribution p {
+  font-size: 20px;
+  margin: 0 0 100px 0;
+  line-height: 2;
+}
+
+.cont_policy table {
+  border-top: 2px solid #444;
+  margin: 30px 0 0;
+  font-size: 1.125rem;
+  width: 100%;
+  position: relative;
+}
+
+.cont_policy table thead th {
+  text-align: center;
+  background: #f5f5f5;
+}
+
+.cont_policy table thead th:nth-child(2) {
+  border-left: 1px solid #e5e5e5;
+}
+
+.cont_policy table th,
+.cont_policy table td {
+  padding: 35px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.cont_policy table th {
+  font-weight: 700;
+  color: #d2001a;
+}
+
+.cont_policy table td {
+  border-left: 1px solid #e5e5e5;
+  line-height: 2;
+}
+
+.cont_policy table td::before {
+  content: "";
+  position: absolute;
+  background-color: #d2001a;
+  width: 5px;
+  height: 5px;
+}
+
+.cont_policy table td:first-child {
+  border-left: 0;
+}
+
+.cont_policy table td span {
+  font-weight: 600;
+  font-size: 1.35rem;
+  line-height: 2;
+}
+
+.cont_activity {
+  display: flex;
+  margin-top: 100px;
+}
+
+.cont_activity h3 {
+  width: 40%;
+  padding: 50px 30px 30px 10px;
+  line-height: 1.5;
+  margin-right: 100px;
+}
+
+.cont_activity h3::after {
+  left: 12px;
+  bottom: 697px;
+}
+
+.cont_activity div {
+  margin-top: 120px;
+}
+
+.cont_activity div p {
+  margin-top: 80px;
+}
+
+/* sub3_2 > 사회공헌 - 친환경경영 */
+.eco_management {
+  position: relative;
+  left: 50%;
+  width: 2000px;
+  height: 470px;
+  margin-left: -1000px;
+  margin-bottom: 800px;
+  padding: 75px 0 0;
+  background: url("../images/sub3_2_img1.jpg") 50% 50% no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  text-align: center;
+  color: #fff;
+  box-sizing: border-box;
+}
+
+.eco_management p {
+  font-size: 23px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  line-height: 2;
+  margin-top: 100px;
+}
+
+.eco_management ul {
+  position: absolute;
+  display: flex;
+  left: 50%;
+  top: 400px;
+  width: 1200px;
+  padding: 100px 20px;
+  box-sizing: border-box;
+  margin-left: -600px;
+  background: rgb(210, 0, 26);
+  border-radius: 35px;
+  box-shadow: 20px 20px 40px 0 rgba(0, 0, 0, 0.4);
+}
+
+.eco_management ul li {
+  width: 25%;
+  padding: 0 40px;
+  border-left: 1px dashed rgba(255, 255, 255, 0.5);
+  box-sizing: border-box;
+  text-align: center;
+  letter-spacing: -0.025rem;
+  line-height: 2;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.eco_management ul li:first-child {
+  border-left: 0;
+}
+
+.eco_management ul li img {
+  width: 72px;
+  height: 72px;
+  margin: 0 auto 50px;
+}
+
+.eco_management ul span {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 3;
+  color: rgba(255, 255, 255);
+}
+
+/* sub3_3 > 사회공헌 - 주요성과 */
+.archivement {
+  margin: 180px 0 0;
+  position: relative;
+}
+
+.archivement h3 {
+  font-size: 35px;
+  letter-spacing: -0.065rem;
+  margin: 80px 0 40px 15px;
+}
+
+.archivement h3::after {
+  content: "";
+  width: 5px;
+  height: 32px;
+  position: absolute;
+  left: 2px;
+  background: #d2001a;
+}
+
+.archivement table {
+  border-top: 2px solid #444;
+  margin: 30px 0 100px 0;
+  font-size: 1.125rem;
+  width: 100%;
+  position: relative;
+}
+
+.archivement table thead th {
+  text-align: center;
+  background: #f5f5f5;
+  border-left: 1px solid #e5e5e5;
+}
+
+.archivement table thead th:first-child {
+  border-left: 0;
+}
+
+.archivement table th,
+.archivement table td {
+  padding: 25px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.archivement table th {
+  font-weight: 700;
+  /* color: #D2001A; */
+}
+
+.archivement table td {
+  border-left: 1px solid #e5e5e5;
+  line-height: 2;
+}
+
+.archivement table td:first-child {
+  border-left: 0;
+}
+
+.archivement tr td:nth-child(1) {
+  font-weight: 600;
+}
+
+.archivement tr td:last-child {
+  font-weight: 600;
+  color: #d2001a;
+  background-color: rgb(210, 0, 26, 0.2);
+}
+
+.archivement_list {
+  overflow: hidden;
+  margin-bottom: 120px;
+  padding-bottom: 56px;
+}
+
+.archivement_list ul {
+  overflow: hidden;
+  padding: 10px 0;
+  display: flex;
+}
+
+.archivement_list li {
+  margin-left: 100px;
+  margin-right: 100px;
+  border: 1px solid #ccc;
+  position: relative;
+  width: 40%;
+  height: 360px;
+  box-shadow: 2px 2px 5px 2px #999;
+  overflow: hidden;
+  background: #666;
+}
+
+.archivement_list li:last-child {
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+.archivement_list li img {
+  transform: scale(1);
+  opacity: 1;
+  transition: all 1s ease-out;
+}
+
+.archivement_list li:hover img {
+  transform: scale(1.2);
+  opacity: 0.7;
+}
+
+.archivement_list li dl {
+  position: absolute;
+  left: 0;
+  top: 475px;
+  width: 570px;
+  height: 400px;
+  background: rgba(0, 0, 0, 0.6);
+  transition: all 0.5s ease-out;
+}
+
+.archivement_list li:hover dl {
+  top: 0;
+}
+
+.archivement_list li dt {
+  font-size: 24px;
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
+  line-height: 2;
+  margin: 55px 0;
+}
+
+.archivement_list li dd {
+  font-size: 16px;
+  color: #fff;
+  margin: 50px;
+  text-align: center;
+  line-height: 2;
+}
