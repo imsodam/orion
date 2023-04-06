@@ -112,8 +112,11 @@
   position: relative;
   left: 50%;
   width: 2000px;
-  height: 470px;
+  height: 500px;
   margin: 180px 0 800px -1000px;
+  /* margin-left: -1000px;
+  margin-bottom: 800px;
+  margin-top: 180px; */
   padding: 75px 0 0;
   background: url("../images/sub3_2_img1.jpg") 50% 50% no-repeat;
   background-size: cover;
@@ -185,7 +188,7 @@
 .archivement h3 {
   font-size: 35px;
   letter-spacing: -0.065rem;
-  margin: 80px 0 40px 15px;
+  margin: 80px 0 100px 15px;
 }
 
 .archivement h3::after {
@@ -237,17 +240,23 @@
 
 .archivement tr td:nth-child(1) {
   font-weight: 600;
+  text-align: center;
+}
+
+.archivement tr td:nth-child(3) {
+  text-align: center;
 }
 
 .archivement tr td:last-child {
   font-weight: 600;
   color: #d2001a;
-  background-color: rgb(210, 0, 26, 0.2);
+  background: #f7f7f7;
+  text-align: center;
 }
 
 .archivement_list {
   overflow: hidden;
-  margin-bottom: 120px;
+  margin: 200px 0 120px 0;
   padding-bottom: 56px;
 }
 
@@ -260,7 +269,6 @@
 .archivement_list li {
   margin-left: 100px;
   margin-right: 100px;
-  border: 1px solid #ccc;
   position: relative;
   width: 40%;
   height: 360px;
@@ -315,4 +323,3 @@
   text-align: center;
   line-height: 2;
 }
- 
