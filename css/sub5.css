@@ -4,7 +4,6 @@
   width: 33.33%;
 }
 /* sub5_1 > 뉴스룸- 유튜브 */
-/* 유튜브 */
 .youtube .youtube_main {
   /* width: 900px;  */
   margin: 180px auto 0;
@@ -54,7 +53,6 @@
 
 .youtube .youtube_list li span {
   display: block;
-  /* height: 52px; */
   color: #999;
   overflow: hidden;
   font-size: 20px;
@@ -229,6 +227,10 @@
 }
 
 /* sub5_3 > 뉴스룸- 보도자료 */
+.news_wrap {
+  margin-top: 180px;
+}
+
 .news_wrap .news_list {
   border-top: 1px solid #999;
 }
@@ -406,4 +408,3 @@
 .news_wrap .sub5_search button:hover {
   background: rgb(210, 0, 26, 0.5);
 }
- 
