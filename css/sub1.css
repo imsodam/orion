@@ -272,7 +272,7 @@
 /* sub1_2 > 회사소개 - 경영방침 */
 #content .content_img img {
   height: 300px;
-  margin: 0 40px 100px;
+  margin: 80px 40px 100px;
   animation: fadeInUp 3s;
 }
 
