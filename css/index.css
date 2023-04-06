@@ -67,8 +67,6 @@
 
 .article1 .slick-arrow {
   position: absolute;
-  /* top: 50%; */
-  /* transform: translateY(-50%); */
   font-size: 50px;
   color: #fff;
   border: none;
@@ -86,8 +84,7 @@
 .article1 .slick-dots {
   position: absolute;
   bottom: 40%;
-  /* bottom: 400px; */
-  right: 27%;
+  right: 31%;
   width: 100%;
   text-align: center;
 }
