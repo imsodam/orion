@@ -79,7 +79,18 @@
             }
         }
     )
-
+    
+    // 헤더 scroll
+    $(window).scroll(function () {
+        var num = $(this).scrollTop();
+        if (num > 10) {
+            $("#headerArea").addClass("on");
+            $('#headerArea').css('height', '100px')
+        } else {
+            $("#headerArea").removeClass("on");
+        }
+    });
+    
     // mobile 햄버거메뉴
     $('#headerArea .open').on('click', function () {
         $(this).addClass('on')
