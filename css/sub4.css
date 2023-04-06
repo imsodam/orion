@@ -75,7 +75,7 @@
 .rank h3 {
   font-size: 35px;
   letter-spacing: -0.065rem;
-  margin: 160px 0 40px 15px;
+  margin: 200px 0 40px 15px;
 }
 
 .rank h3::after {
@@ -117,7 +117,7 @@
 .rank td ul li {
   position: relative;
   padding-left: 15px;
-  margin-top: 12px;
+  margin-top: 25px;
   font-weight: 500;
 }
 
@@ -130,7 +130,7 @@
   display: block;
   background: #ccc;
   position: absolute;
-  top: 313px;
+  top: 333px;
   width: 92%;
   height: 1px;
   margin-top: 10px;
@@ -138,10 +138,9 @@
 
 .rank .rank_01 li {
   width: 12.5%;
-  margin-bottom: 80px;
+  margin-bottom: 100px;
   padding: 0 30px;
   text-align: center;
-  font-weight: 700;
 }
 
 .rank .rank_01 li::after {
@@ -149,12 +148,12 @@
   position: absolute;
   display: block;
   z-index: 10;
-  margin: 10px auto;
+  margin: 30px auto;
   width: 10px;
   height: 10px;
   border-radius: 50%;
   background-color: #d2001a;
-  top: 36px;
+  top: 24px;
   left: 65px;
 }
 
@@ -179,7 +178,7 @@
   display: block;
   background: #ccc;
   position: absolute;
-  bottom: 187px;
+  bottom: 213px;
   width: 92%;
   height: 1px;
   margin-top: 10px;
@@ -187,7 +186,7 @@
 
 .rank .rank_03 li {
   width: 20%;
-  margin-bottom: 80px;
+  margin-bottom: 100px;
   padding: 0 30px;
   text-align: center;
 }
@@ -202,7 +201,7 @@
   height: 10px;
   border-radius: 50%;
   background-color: #d2001a;
-  top: 36px;
+  top: 62px;
   left: 115px;
 }
 
@@ -489,4 +488,3 @@
   min-height: 68px;
   line-height: 1.4;
 }
- 
