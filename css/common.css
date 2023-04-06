@@ -203,13 +203,13 @@
   position: relative;
   width: 100%;
   background: #eeeeee;
-  margin-top: 100px;
+  margin-top: 200px;
   padding: 70px 0;
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 
 #footerArea .foot_link {
-  /* overflow: hidden; */
+  overflow: hidden;
   height: 70px;
 }
 
@@ -243,7 +243,6 @@
 }
 
 #footerArea .copy {
-  /* clear: both; */
   position: relative;
   border-top: 1px solid #dcdcdc;
   padding: 25px 0;
@@ -268,7 +267,6 @@
 }
 
 #footerArea .family {
-  /* position: relative; */
   position: absolute;
   width: 160px;
   height: 47px;
@@ -475,4 +473,5 @@
 
 .search_close:hover {
   transform: rotate(180deg);
-} 
+}
+ 
