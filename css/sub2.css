@@ -1,3 +1,4 @@
+@charset "utf-8";
 /* sub2_1 > 윤리경영 - 윤리경영체계 */
 .content_area .tab.w2 {
   width: 100%;
@@ -14,14 +15,15 @@
 .content_area .tab li a {
   position: relative;
   /* height: 68px;  */
-  line-height: 68px;
+  /* line-height: 68px; */
   display: block;
   font-size: 20px;
   border: 1px solid #ddd;
   border-left-width: 0;
+  border-radius: 15px;
   text-align: center;
   color: #999;
-  transition: all 0.3s;
+  transition: all 0.5s;
 }
 
 .content_area .tab li:first-child a {
@@ -29,7 +31,7 @@
 }
 
 .content_area .tab li:hover a {
-  background: rgba(0, 87, 147, 0.04);
+  background: rgba(255, 235, 235, 0.5);
 }
 
 .content_area .tab li.current a {
@@ -46,14 +48,16 @@
   width: 100%;
   height: 100%;
   border: 1px solid #d2001a;
+  border-radius: 15px;
 }
 
 .cont {
-  margin: 80px 0 0;
+  margin-top: 300px;
   font-size: 20px;
   letter-spacing: -0.025rem;
   line-height: 30px;
   position: relative;
+  padding-bottom: 100px;
 }
 
 .cont h3 {
@@ -67,97 +71,200 @@
   width: 5px;
   height: 32px;
   position: absolute;
-  left: 2px;
+  left: 0;
   background: #d2001a;
 }
 
-.cont h4 {
+/* .cont h4 {
   font-size: 25px;
   font-weight: 600;
   letter-spacing: -0.045rem;
   margin: 80px 0 30px;
-}
+} */
 
-.cont img {
-  position: absolute;
-  top: 80%;
-  transform: translateY(-50%);
-  left: 50%;
-}
-
-.cont .ethics_active {
-  margin: 100px 0 150px;
+.cont_box1 {
   display: flex;
-}
-
-.cont .ethics_active li {
+  align-items: center;
   position: relative;
-  width: 180px;
-  height: 180px;
-  border-radius: 50%;
-  box-sizing: border-box;
-  margin-left: 60px;
-  text-align: center;
-  padding: 8px;
-  background-color: #fff;
-  /* background: rgb(210, 0, 26);
-  background: linear-gradient(
-    0deg,
-    rgba(210, 0, 26, 1) 50%,
-    rgba(244, 204, 204, 1) 50%
-  ); */
-  /* opacity: 0; */
 }
 
-.cont .ethics_active li:nth-child(1) {
-  background-color: #ffebee;
-}
-.cont .ethics_active li:nth-child(2) {
-  background-color: #fce4ec;
-}
-.cont .ethics_active li:nth-child(3) {
-  background-color: #ffcdd2;
-}
-.cont .ethics_active li:nth-child(4) {
-  background-color: #f8bbd0;
-}
-.cont .ethics_active li:nth-child(5) {
-  background-color: #d2001a;
-}
-
-.cont .ethics_active li div {
-  background: #fff;
+.cont_box1 .img_box {
   width: 100%;
-  height: 100%;
+  animation: fadeInLeft 3s;
+}
+
+.cont_box1 .txt_box {
+  margin-left: 80px;
+  animation: fadeInRight 3s;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.cont_box1 .txt_box h3 {
+  font-size: 35px;
+  letter-spacing: -0.065rem;
+  margin: 80px 0 40px 15px;
+}
+
+.cont_box1 .txt_box h3:after {
+  content: "";
+  width: 5px;
+  height: 32px;
+  position: absolute;
+  top: 40%;
+  left: 0;
+  transform: translateY(-50%);
+  background: #d2001a;
+}
+
+.cont_box2 {
+  padding: 200px 0;
+  animation: fadeInUp 4s;
+}
+
+.cont_box2 .inner {
+  max-width: 1600px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* .cont_box2 .inner_title {
+  text-align: center;
+  font-size: 28px;
+} */
+
+.cont_box2 .inner_box {
+  position: relative;
+  margin-top: 355px;
+}
+
+.cont_box2 .inner_box ul {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  margin: 0 auto;
+  background: url(../images/sub2_1_img2.png) center center no-repeat;
+}
+
+.cont_box2 .inner_box ul li .circle {
+  position: relative;
+}
+
+.cont_box2 .inner_box ul li .circle:after {
+  content: "";
+  display: block;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  /* left: 50%; */
+  right: -15%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.cont_box2 .inner_box ul li .circle span {
+  font-size: 28px;
+  font-weight: 700;
+  position: relative;
+  z-index: 2;
+  width: 150px;
+  height: 150px;
+  background-color: #fff;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.cont .ethics_active li div p {
+.cont_box2 .inner_box ul li dl {
+  position: absolute;
+}
+
+.cont_box2 .inner_box ul li dt {
+  color: #111;
   font-weight: 700;
+  font-size: 20px;
 }
 
-.cont .ethics_active2 {
-  display: flex;
-  padding-top: 50px;
-  margin-left: 60px;
+.cont_box2 .inner_box ul li dd {
+  margin-top: 25px;
+  color: #333;
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 1.6;
 }
 
-.cont .ethics_active2 li {
-  width: 33.3%;
-  margin: 0 10px 40px;
-  padding: 15px;
-  border-radius: 15px;
+.cont_box2 .inner_box ul li .box.ethicsbox1 {
+  position: absolute;
+  top: -10%;
+  left: 50%;
+  transform: translateX(-50%);
   text-align: center;
-  background: rgba(244, 204, 204);
-  transition: all 0.4s ease-out;
-  color: #fff;
 }
 
-.cont .ethics_active2 li:hover {
-  background: #d2001a;
+.cont_box2 .inner_box ul li .box.ethicsbox1 dl {
+  top: -160px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 500px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.cont_box2 .inner_box ul li .box.ethicsbox1 .circle span {
+  color: #d9032d;
+  box-shadow: rgba(230, 0, 45, 0.4) 0 0 30px -2px;
+}
+
+.cont_box2 .inner_box ul li .box.ethicsbox1 .circle:after {
+  background-color: rgba(230, 0, 45, 0.05);
+}
+
+.cont_box2 .inner_box ul li .box.ethicsbox2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: 166px;
+}
+
+.cont_box2 .inner_box ul li .box.ethicsbox2 dl {
+  top: 30px;
+  left: 220px;
+  width: 500px;
+}
+
+.cont_box2 .inner_box ul li .box.ethicsbox2 .circle:after {
+  background-color: rgba(89, 87, 87, 0.05);
+}
+
+.cont_box2 .inner_box ul li .box.ethicsbox2 .circle span {
+  color: #575555;
+  box-shadow: rgba(89, 87, 87, 0.4) 0 0 30px -2px;
+}
+
+.cont_box2 .inner_box ul li .box.ethicsbox3 {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  margin-right: 166px;
+}
+
+.cont_box2 .inner_box ul li .box.ethicsbox3 dl {
+  top: 30px;
+  right: 220px;
+  width: 500px;
+  text-align: right;
+}
+
+.cont_box2 .inner_box ul li .box.ethicsbox3 .circle:after {
+  background-color: rgba(0, 54, 104, 0.05);
+}
+
+.cont_box2 .inner_box ul li .box.ethicsbox3 .circle span {
+  color: #023565;
+  box-shadow: rgba(0, 54, 104, 0.4) 0 0 30px -2px;
 }
 
 .ethics02 {
@@ -170,6 +277,8 @@
 
 .ethics02 .ethics02_txt {
   background: #f5f5f5;
+  box-shadow: 3px 3px 3px 3px #555555;
+  border-radius: 5px;
   padding: 50px;
   line-height: 2;
   font-size: 23px;
@@ -179,12 +288,13 @@
 .human_rights {
   margin: 80px 0 0;
   position: relative;
+  animation: fadeInUp 3s;
 }
 
 .human_rights h3 {
   font-size: 35px;
   letter-spacing: -0.065rem;
-  margin: 80px 0 30px 15px;
+  margin: 80px 0 100px 15px;
 }
 
 .human_rights h3:after {
@@ -197,9 +307,9 @@
 }
 
 .human_rights img {
-  width: 1200px;
+  width: 100%;
   height: 400px;
-  margin: 50px 0 50px 0;
+  margin: 0 0 50px 0;
 }
 
 .human_rights .rights_txt {
@@ -209,14 +319,15 @@
 
 /* 임직원 고충처리제도 */
 .human_policy {
-  margin: 80px 0 0;
+  margin: 100px 0 0;
   position: relative;
+  animation: fadeInUp 4s;
 }
 
 .human_policy h3 {
   font-size: 35px;
   letter-spacing: -0.065rem;
-  margin: 80px 0 30px 15px;
+  margin: 80px 0 100px 15px;
 }
 
 .human_policy h3:after {
@@ -244,7 +355,7 @@
 
 .human_policy .box1,
 .box2 {
-  width: 570px;
+  width: 50%;
   height: 400px;
   background: #f6f6f6;
   margin: 0 0 100px 30px;
@@ -371,78 +482,26 @@
 }
 
 /* sub2_3 > 윤리경영 - 안전보건 */
-.area1 {
-  padding-bottom: 200px;
-  margin-top: 150px;
-  overflow: hidden;
+.content_area .cont_box {
+  margin: 0 120px 100px;
+  border-top: 1px solid #000;
+}
+
+.content_area .cont_box .cont_list {
   display: flex;
+  align-items: center;
+  padding: 40px;
+  border-bottom: 1px solid #d7d7d7;
+  font-size: 20px;
+  line-height: 1.6;
 }
 
-.area1 .area1_text {
-  width: 40%;
-  position: relative;
-}
-
-.area1 dt {
-  font-weight: 700;
-  font-size: 24px;
-  color: #333;
-  line-height: 1.5em;
-  margin-bottom: 100px;
-}
-
-.area1 dt span {
+.content_area .cont_box .cont_list strong {
+  padding-right: 30px;
   color: #d2001a;
+  font-size: 24px;
+  width: 30%;
 }
-
-.area1 dd {
-  font-weight: 400;
-  font-size: 18px;
-  color: #666;
-  line-height: 1.5em;
-  text-align: justify;
-  margin-bottom: 90px;
-}
-
-.area1 dd:last-child {
-  font-weight: 500;
-  font-size: 22px;
-  text-align: right;
-}
-
-.area1 dd span {
-  display: inline-block;
-  font-size: 22px;
-  font-weight: 500;
-  letter-spacing: -0.065em;
-  color: #000;
-  vertical-align: text-bottom;
-}
-
-.area1 dd b {
-  display: inline-block;
-  font-size: 30px;
-  letter-spacing: -0.065em;
-  color: #000;
-  margin-left: 14px;
-  opacity: 0;
-  -webkit-transform: translate3d(0, 100%, 0);
-  transform: translate3d(0, 100%, 0);
-  --animate-duration: 2.5s;
-}
-
-.area1 dd b.animate__animated.animate__fadeInUp {
-  -webkit-animation-name: fadeInUp;
-  animation-name: fadeInUp;
-}
-
-/* .area1 img {
-  width: 40%;
-  position: relative;
-  margin-left: 100px;
-  box-shadow: -50px 50px rgba(255, 0, 0, 0.2);
-  border-radius: 15px;
-} */
 
 /* sub2_4 > 윤리경영 - 임직원만족 */
 .satisfaction_con {
@@ -454,6 +513,7 @@
   align-items: center;
   justify-content: space-between;
   border: 1px solid #d6d6d6;
+  border-radius: 5px;
   padding: 40px 20px;
   margin-top: 50px;
 }
@@ -496,6 +556,11 @@
   height: 158px;
   border: 22px solid #fce8eb;
   border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+}
+
+.satisfaction .icon:hover {
+  border: 22px solid #ffc5ce;
 }
 
 .satisfaction .icon img {
