@@ -113,8 +113,7 @@
   left: 50%;
   width: 2000px;
   height: 470px;
-  margin-left: -1000px;
-  margin-bottom: 800px;
+  margin: 180px 0 800px -1000px;
   padding: 75px 0 0;
   background: url("../images/sub3_2_img1.jpg") 50% 50% no-repeat;
   background-size: cover;
