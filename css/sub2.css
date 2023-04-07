@@ -471,6 +471,7 @@
 .content_area .cont_box {
   margin: 180px 120px 100px;
   border-top: 1px solid #000;
+  animation: fadeInUp 3s;
 }
 
 .content_area .cont_box .cont_list {
@@ -506,8 +507,16 @@
 
 .satisfaction_con .satisfaction:first-child {
   margin-top: 0;
+  animation: fadeInUp 3s;
 }
 
+.satisfaction_con .satisfaction:nth-child(2) {
+  animation: fadeInUp 4s;
+}
+
+.satisfaction_con .satisfaction:last-child {
+  animation: fadeInUp 5s;
+}
 .satisfaction dl {
   width: calc(100% - 15rem);
 }
