@@ -221,6 +221,7 @@
 .recruit_process {
   margin: 180px 0 0;
   position: relative;
+  animation: fadeInUp 3s;
 }
 
 .recruit_process h3 {
