@@ -13,13 +13,15 @@ $(document).ready(function () {
         }
     }
     // 모두 체크/해제
-    // $('.allcheck').toggle(function (e) {
-    //     e.preventDefault();
-    //     $('input[type="checkbox"]').attr('checked', true);
-    // }, function (e) {
-    //     e.preventDefault();
-    //     $('input[type="checkbox"]').attr('checked', false);
-    // });
+    $('#allcheck').click(function () {
+        if ($('#allcheck').prop('checked')) {
+            $('input[type="checkbox"]').prop('checked', true);
+        }
+        else {
+            $('input[type="checkbox"]').prop('checked', false);
+
+        }
+    })
 });
 
 // 취소
