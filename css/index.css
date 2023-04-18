@@ -28,6 +28,20 @@
   background-image: url(../images/vs_img03.jpeg);
 }
 
+#section .article1 .slide.slick-current.slick-active .img {
+  animation: scaleIn 5s linear both;
+}
+@keyframes scaleIn {
+  from {
+    opacity: 0.9;
+    transform: scale(1) translate(0px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1.1) translate(0px);
+  }
+}
+
 #section .article1 .slide .slide_text {
   position: absolute;
   top: 50%;
