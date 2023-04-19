@@ -114,9 +114,6 @@
   width: 2000px;
   height: 500px;
   margin: 180px 0 800px -1000px;
-  /* margin-left: -1000px;
-  margin-bottom: 800px;
-  margin-top: 180px; */
   padding: 75px 0 0;
   background: url("../images/sub3_2_img1.jpg") 50% 50% no-repeat;
   background-size: cover;
@@ -143,20 +140,21 @@
   padding: 100px 20px;
   box-sizing: border-box;
   margin-left: -600px;
-  background: rgb(210, 0, 26);
+  background: #e9e8e8;
   border-radius: 35px;
-  box-shadow: 20px 20px 40px 0 rgba(0, 0, 0, 0.4);
+  box-shadow: 20px 20px 40px 0 rgba(0, 0, 0, 0.3);
 }
 
 .eco_management ul li {
   width: 25%;
   padding: 0 40px;
-  border-left: 1px dashed rgba(255, 255, 255, 0.5);
+  border-left: 1px dashed #b7b7b7;
   box-sizing: border-box;
   text-align: center;
   letter-spacing: -0.025rem;
   line-height: 2;
-  color: rgba(255, 255, 255, 0.7);
+  /* color: rgba(255, 255, 255, 0.7); */
+  color: #444;
   font-size: 20px;
   display: flex;
   flex-direction: column;
@@ -176,7 +174,7 @@
   font-weight: 600;
   font-size: 22px;
   line-height: 3;
-  color: rgba(255, 255, 255);
+  color: #444;
 }
 
 /* sub3_3 > 사회공헌 - 주요성과 */
