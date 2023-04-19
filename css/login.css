@@ -1,0 +1,60 @@
+.logo {
+  display: block;
+  width: 140px;
+  height: 120px;
+  background: url(../images/orion-logo3.png) no-repeat;
+  text-indent: -999px;
+  overflow: hidden;
+  margin: 50px auto 50px;
+  text-align: center;
+}
+
+#content {
+  width: 100%;
+  margin-bottom: 100px;
+}
+
+.login_box {
+  width: 800px;
+  position: relative;
+  overflow: hidden;
+  margin: 100px auto 40px;
+  padding: 50px;
+  border: 1px solid #3d4146;
+  border-radius: 5px;
+}
+
+.login_box_inner {
+  margin-left: 100px;
+}
+
+.login_box input {
+  display: block;
+  width: 500px;
+  border: 1px solid #999;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.login_box input:focus {
+  outline: none;
+  border-color: #3d4146;
+}
+
+.login_box button {
+  width: 500px;
+  background: #3d4146;
+  color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  transition: all 0.3s ease-in-out;
+  border: none;
+  font-size: 16px;
+}
+
+.login_box button:hover {
+  background: #8a9398;
+  color: #3d4146;
+  font-weight: 700;
+}
